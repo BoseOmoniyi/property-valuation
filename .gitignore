@@ -205,3 +205,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# ===== PROJECT SPECIFIC =====
+# Data files - CRITICAL: Do not commit data per assessment requirements
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.db
+*.sqlite
+
+# Model files (if large)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pb
+
+# Results (optional - you might want to commit some results)
+results/*.png
+results/*.jpg
+results/*.pdf
+
+# Jupyter checkpoints (if not already covered)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
